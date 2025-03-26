@@ -1,2 +1,2 @@
 # TEMPLATE-PROJET
-Fichier projet arborescence SCSS vierge
+Fichier appli meteo
