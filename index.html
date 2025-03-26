@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UFT-8">
+        <link href="assets/css/styles.css" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
+        <title>Meteo</title>
+    </head>
+    <body>
+        <header>
+            
+        </header>
+        <main>
+            <!------------------------------------------ Current = temps actuel ------------------------------------------------->
+            <div class="container-fluid hero">
+                <section class="current">
+                    <div class="container">
+                        <div class="row">
+                            <!------------------------------------------ Date / heure / jour-nuit ------------------------------------------------->
+                            <!------------------------Vignette date actuelle------------------------->
+                            <div class="column date m-d-no">
+                                <div class="grid-row">
+                                    <div id="cDate" class="card-base">
+                                        <p class="w-text"></p>
+                                    </div>
+                                </div>
+                                <div class="grid-row">
+                                    <div class="column">
+                                        <div class="empty">
+                                        </div>
+                                    </div>
+                                    <!------------------------Vignette nuit / jour------------------------->
+                                    <div class="column">
+                                        <div  id="cNightDay" class="card-base">
+                                            <img src="assets/images/icone/night.png" alt="night">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!------------------------Vignette temps actuel------------------------->
+                            <div class="column weather">
+                                <div class="card-base">
+                                    <div id="cWeather" class="column"></div>
+                                    <p id="cTemperature" class="b-text"></p>
+                                </div>
+                            </div>
+                            <div class="column wind m-d-no">
+                                <div class="grid-row">
+                                    <div class="empty">
+                                    </div>
+                                </div>
+                                <!------------------------Vignette vent actuel------------------------->
+                                <div class="grid-row">
+                                    <div id="cWind" class="card-base">
+                                        <div id="cWindDirection">
+                                            <img id="cWindArrow" src="assets/images/icone/compass-arrow.png" alt="compass arrow">
+                                        </div>
+                                        <p id="cWindSpeed" class="xxs-text">Vitesse du vent</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-d-yes">
+                        <div id="perHour">
+                            <button id="buttonHour" class="primary-button left-button" onclick="show(perHour)">Par heure</button>
+                        </div>
+                        <div id="perDay">
+                            <button id="buttonDay" class="secondary-button right-button" onclick="show(perDay)">Tous les jours</button>
+                        </div>
+                    </div>
+                </section>
+                <!------------------------------------------ carroussel temps par heure ------------------------------------------------->
+                <section class="hours">
+                    <div class="container">
+                        <div class="row">
+                            <div class="card-base carousel">
+                                <div id="backHour" class="back-btn">
+                                    <img src="assets/images/icone/back-arrow.png" alt="click to watch previous image">
+                                </div>
+                                <div id="hCard">
+                                </div>
+                                <div id="forwardHour" class="forward-btn">
+                                    <img src="assets/images/icone/back-arrow.png" alt="click to watch next image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!------------------------------------------ carroussel temps par jour ------------------------------------------------->
+                <section class="days m-d-no">
+                    <div class="container">
+                        <div class="row">
+                            <div class="card-base carousel">
+                                <div id="backDay" class="back-btn">
+                                    <img src="assets/images/icone/back-arrow.png" alt="click to watch previous image">
+                                </div>
+                                <div id="dCard">
+                                </div>
+                                <div id="forwardDay" class="forward-btn">
+                                    <img src="assets/images/icone/back-arrow.png" alt="click to watch next image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

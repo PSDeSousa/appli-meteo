@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/typography' as *;
+
+
+p{
+    @include text($color:$text-color,$typo:$primary-font,$text-size:2rem);
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+.b-text{
+    @include text($color:$text-color,$typo:$primary-font,$text-size:4rem);
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+.s-text{
+    @include text($color:$text-color,$typo:$primary-font,$text-size:1rem);
+}
+.xs-text{
+    @include text($color:$primary-color,$typo:$primary-font,$text-size:1rem);
+}
+.xxs-text{
+    @include text($color:$primary-color,$typo:$terciary-font,$text-size:1rem);
+    margin-top:1rem;
+}
+.m-text{
+    @include text($color:$primary-color,$typo:$primary-font,$text-size:1.5rem);
+}

@@ -1,0 +1,54 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+@use '../../abstracts/colors' as *;
+@use '../../abstracts/typography' as *;
+
+//effet de base des espaces infos
+.card-base{
+    background-color: $layout-color;
+    box-shadow: inset 0 0 12px #00000054;
+    //border: 1px solid #ccc;
+    border-radius : 1rem;
+    @include flex(column, center, center);
+}
+.empty{
+    background-color: $back-color;
+    box-shadow: inset 0 0 12px #00000054;
+    //border: 1px solid #ccc;
+    border-radius : 1rem;
+}
+.card-hour, .card-day{
+    background-color: $layout-color;
+    box-shadow: inset 0 0 12px #00000054;
+    //border: 1px solid #ccc;
+    border-radius : 1rem;
+    @include flex(column,center,center);
+    .grid-row{
+        @include flex(row,space-evenly,center);
+    }
+}
+.card-hour{
+    width : 8rem;
+    height : 8rem;
+}
+.card-day{
+    width : 12rem;
+    height : 16rem;
+}
+
+/**
+**************** Mobile **************************
+**/
+@media (max-width: 768px) {
+    .card-hour{
+        width : 4rem;
+        height : 16rem;
+    }
+    .card-day{
+        width : 8rem;
+        height : 20rem;
+    }
+    
+
+
+}

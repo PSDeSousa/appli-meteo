@@ -1,0 +1,16 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+@use '../../abstracts/colors' as *;
+@use '../../abstracts/typography' as *;
+// Primary-button
+.secondary-button{
+    @include button($layout-color,$text-color, 0rem, none);
+    width:10rem;
+    height:4rem;
+}
+.right-button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}

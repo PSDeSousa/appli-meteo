@@ -1,0 +1,178 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/typography' as *;
+
+.container-fluid{
+    width : 100%;
+    @include flex(column, center, center);
+    padding : 6rem;
+}
+.hero{
+    //background-image: url("../images/background/b-0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    width : 100%;
+    max-width: 86rem;
+    @include flex(column, center, center);
+}
+section{
+    width : 100%;
+}
+.row{
+    width : 100%;
+    @include flex(row, center, center);
+    margin-top : 1rem;
+    margin-bottom : 1rem;
+    gap : 1rem;
+}
+.grid-row{
+    width : 100%;
+    @include flex(row, space-between, center);
+    gap : 1rem;
+}
+.column{
+    @include flex(column, space-between, center);
+    gap : 1rem;
+}
+//Section current
+.current{
+    .row{
+        > .column:first-child{
+            flex: 1 1 calc(33.333% - 1rem);
+            .column{
+                flex: 1 1 calc(50% - 1rem);
+            }
+        }
+        > .column:nth-child(2){
+            flex: 1 1 calc(33.333% - 1rem);
+        }
+        > .column:last-child{
+            flex: 1 1 calc(33.333% - 1rem);
+        }
+    }
+    .date{
+        #cDate{
+            width : 100%;
+            //width : 25rem;
+            height : 18rem;
+        }
+        #cNightDay{
+            width : 100%;
+            //width : 12rem;
+            height : 12rem;
+        }
+        .empty{
+            width : 100%;
+            //width : 12rem;
+            height : 12rem;
+        }
+    }
+    .weather{
+        .card-base{
+            width : 100%;
+            //width : 35rem;
+            height : 31rem;
+        }
+    }
+
+    .wind{
+        .empty{
+            width : 100%;
+            //width : 24rem;
+            height : 6rem;
+        }
+        #cWind{
+            width : 100%;
+            //width : 24rem;
+            height : 24rem;
+            #cWindDirection{
+                width : 18rem;
+                height : 18rem;
+                background-image: url("../images/icone/compass.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                @include flex(column, center, center);
+            }
+        }
+    }
+}
+.hours{
+    .card-base{
+        width : 100%;
+        gap : 1rem;
+        padding : 1rem;
+    }
+    #hCard{
+        @include flex(row, center, center);
+        gap:1rem;
+    }
+}
+.days{
+    .card-base{
+        width : 100%;
+        gap : 1rem;
+        padding : 1rem;
+    }
+    #dCard{
+        @include flex(row, center, center);
+        gap:1rem;
+    }
+}
+.m-d-yes{
+    display:none;
+}
+
+/**
+**************** Mobile **************************
+**/
+@media (max-width: 768px) {
+    .m-d-no{
+        display : none;
+    }
+    .m-d-yes{
+        @include flex(row,start,center);
+    }
+    .current{
+        .row{
+            > .column:nth-child(2){
+                @include flex(row,space-between,center);
+                flex: 1 1 calc(33.333% - 1rem);
+                .card-base{
+                    @include flex(row,space-evenly,center);
+                    height : 10rem;
+                }
+                .column{
+                    @include flex(row-reverse,space-evenly,center);
+                }
+                img{
+                    width : 20%;
+                }
+            }
+        }
+    }
+    .hours{
+        .card-base{
+            width : 100%;
+            gap : 0.2rem;
+            padding : 0.5rem;
+        }
+        #hCard{
+            @include flex(row, center, center);
+            gap:0.2rem;
+        }
+    }
+    .days{
+        .card-base{
+            width : 100%;
+            gap : 0.2rem;
+            padding : 0.5rem;
+        }
+        #dCard{
+            @include flex(row, center, center);
+            gap:0.2rem;
+        }
+    }
+}

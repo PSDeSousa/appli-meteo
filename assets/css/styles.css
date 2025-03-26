@@ -1,0 +1,22 @@
+/**
+**************** Polices *******************************************************
+**/
+/********** Inter ******************************/
+/** Inter Bold**/
+@font-face {
+  font-family: "Inter Bold";
+  src: url("../fonts/inter/Inter_18pt-Bold.ttf");
+}
+/** Inter Regular**/
+@font-face {
+  font-family: "Inter Regular";
+  src: url("../fonts/inter/Inter_18pt-Regular.ttf");
+}
+/********** Impact ******************************/
+/** Impact Regular**/
+@font-face {
+  font-family: "Impact Regular";
+  src: url("../fonts/impact/impact.ttf");
+}
+
+/*# sourceMappingURL=styles.css.map */
