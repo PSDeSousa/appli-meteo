@@ -11,3 +11,15 @@
     @include flex(row, space-between, center);
     flex-wrap: nowrap;
 }
+
+/**
+**************** Mobile **************************
+**/
+@media (max-width: 1090px) {
+
+.forward-btn, .back-btn{
+    img{
+        width : 2rem;
+    }
+}
+}

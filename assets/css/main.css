@@ -51,6 +51,29 @@ p {
   margin: 0.5rem 0;
 }
 
+/**
+**************** Mobile **************************
+**/
+@media (max-width: 1090px) {
+  p {
+    font-size: 4rem;
+  }
+  .b-text {
+    font-size: 8rem;
+  }
+  .s-text {
+    font-size: 2rem;
+  }
+  .xs-text {
+    font-size: 2rem;
+  }
+  .xxs-text {
+    font-size: 2rem;
+  }
+  .m-text {
+    font-size: 3rem;
+  }
+}
 .container-fluid {
   width: 100%;
   min-height: 100vh;
@@ -235,7 +258,7 @@ section {
   }
   .hours .card-base {
     width: 100%;
-    gap: 0.2rem;
+    gap: 0.5rem;
     padding: 0.5rem;
   }
   .hours #hCard {
@@ -244,11 +267,11 @@ section {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 0.2rem;
+    gap: 0.5rem;
   }
   .days .card-base {
     width: 100%;
-    gap: 0.2rem;
+    gap: 0.5rem;
     padding: 0.5rem;
   }
   .days #dCard {
@@ -364,8 +387,15 @@ section {
 **/
 @media (max-width: 1090px) {
   .card-hour {
-    width: 4rem;
+    width: 6rem;
     height: 16rem;
+  }
+  .card-hour .grid-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   .card-day {
     width: 8rem;
@@ -384,6 +414,15 @@ section {
   align-items: center;
   flex-wrap: wrap;
   flex-wrap: nowrap;
+}
+
+/**
+**************** Mobile **************************
+**/
+@media (max-width: 1090px) {
+  .forward-btn img, .back-btn img {
+    width: 2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -27,3 +27,30 @@ p{
 .m-text{
     @include text($color:$primary-color,$typo:$primary-font,$text-size:1.5rem);
 }
+
+/**
+**************** Mobile **************************
+**/
+@media (max-width: 1090px) {
+
+p{
+    font-size : 4rem;
+}
+.b-text{
+    font-size : 8rem;
+}
+.s-text{
+    font-size : 2rem;
+}
+.xs-text{
+    font-size : 2rem;
+}
+.xxs-text{
+    font-size : 2rem;
+}
+.m-text{
+    font-size : 3rem;
+}
+
+
+}

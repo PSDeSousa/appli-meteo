@@ -41,8 +41,11 @@
 **/
 @media (max-width: 1090px) {
     .card-hour{
-        width : 4rem;
+        width : 6rem;
         height : 16rem;
+        .grid-row{
+            @include flex(column, center, center);
+        }
     }
     .card-day{
         width : 8rem;
