@@ -5,6 +5,7 @@
 
 .container-fluid{
     width : 100%;
+    min-height : 100vh;
     @include flex(column, center, center);
     padding : 6rem;
 }
