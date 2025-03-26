@@ -195,7 +195,7 @@ section {
 /**
 **************** Mobile **************************
 **/
-@media (max-width: 768px) {
+@media (max-width: 1090px) {
   .m-d-no {
     display: none;
   }
@@ -361,7 +361,7 @@ section {
 /**
 **************** Mobile **************************
 **/
-@media (max-width: 768px) {
+@media (max-width: 1090px) {
   .card-hour {
     width: 4rem;
     height: 16rem;
