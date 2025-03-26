@@ -65,7 +65,7 @@ let buttonHour = document.getElementById('buttonHour');
 let buttonDay = document.getElementById('buttonDay');
 let nbAffichDay = 5;
 let nbAffichHour = 7;
-if (window.matchMedia('(max-width: 768px)').matches) {
+if (window.matchMedia('(max-width: 1090px)').matches) {
     nbAffichDay = 2;
     nbAffichHour = 4;
   }else{
