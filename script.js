@@ -79,7 +79,7 @@ window.addEventListener('resize', function(){
 
 
 function tailleEcran(){
-    if (window.matchMedia('(max-width: 768px)').matches) {
+    if (window.matchMedia('(max-width: 1090px)').matches) {
         nbAffichDay = 2;
         nbAffichHour = 4;
       }else{
