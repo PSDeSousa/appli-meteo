@@ -1,4 +1,4 @@
-# TEMPLATE-PROJET
+# APPLI-METEO
 Fichier appli meteo
 Bienvenue dans le projet **appli-meteo**, une application web permettant de visualiser la météo sur Saint-Etienne
 
