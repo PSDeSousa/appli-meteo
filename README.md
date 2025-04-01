@@ -16,7 +16,7 @@ Bienvenue dans le projet **appli-meteo**, une application web permettant de visu
 
 ## 📂 Structure du projet
 
-projet-mcdo/
+meteo/
 ├── assets/
 │   └── images/             # Icônes et images
 │   └── base/               # Fichiers SCSS
