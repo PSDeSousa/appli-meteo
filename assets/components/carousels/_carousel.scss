@@ -17,9 +17,13 @@
 **/
 @media only screen and (max-width: 1090px) and (orientation: portrait)  {
 
-.forward-btn, .back-btn{
-    img{
-        width : 2rem;
+    .forward-btn, .back-btn{
+        img{
+            width : 2rem;
+        }
     }
-}
+    .carousel{
+        padding-top : 1rem;
+        padding-bottom : 1rem;
+    }
 }

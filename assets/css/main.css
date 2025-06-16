@@ -54,7 +54,7 @@ p {
 /**
 **************** Mobile **************************
 **/
-@media (max-width: 1090px) {
+@media only screen and (max-width: 1090px) and (orientation: portrait) {
   p {
     font-size: 4rem;
   }
@@ -219,7 +219,7 @@ section {
 /**
 **************** Mobile **************************
 **/
-@media (max-width: 1090px) {
+@media only screen and (max-width: 1090px) and (orientation: portrait) {
   .m-d-no {
     display: none;
   }
@@ -259,7 +259,7 @@ section {
   .hours .card-base {
     width: 100%;
     gap: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem;
   }
   .hours #hCard {
     display: flex;
@@ -272,7 +272,7 @@ section {
   .days .card-base {
     width: 100%;
     gap: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem;
   }
   .days #dCard {
     display: flex;
@@ -313,7 +313,7 @@ section {
 /**
 **************** Mobile **************************
 **/
-@media (max-width: 1090px) {
+@media only screen and (max-width: 1090px) and (orientation: portrait) {
   .primary-button {
     width: 24rem;
   }
@@ -348,7 +348,7 @@ section {
 /**
 **************** Mobile **************************
 **/
-@media (max-width: 1090px) {
+@media only screen and (max-width: 1090px) and (orientation: portrait) {
   .secondary-button {
     width: 24rem;
   }
@@ -401,7 +401,7 @@ section {
 /**
 **************** Mobile **************************
 **/
-@media (max-width: 1090px) {
+@media only screen and (max-width: 1090px) and (orientation: portrait) {
   .card-hour {
     width: 6rem;
     height: 24rem;
@@ -435,9 +435,13 @@ section {
 /**
 **************** Mobile **************************
 **/
-@media (max-width: 1090px) {
+@media only screen and (max-width: 1090px) and (orientation: portrait) {
   .forward-btn img, .back-btn img {
     width: 2rem;
+  }
+  .carousel {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
