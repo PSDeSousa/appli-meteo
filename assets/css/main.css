@@ -259,7 +259,7 @@ section {
   .hours .card-base {
     width: 100%;
     gap: 0.5rem;
-    padding: 1rem;
+    padding: 2rem;
   }
   .hours #hCard {
     display: flex;
@@ -272,7 +272,7 @@ section {
   .days .card-base {
     width: 100%;
     gap: 0.5rem;
-    padding: 1rem;
+    padding: 2rem;
   }
   .days #dCard {
     display: flex;

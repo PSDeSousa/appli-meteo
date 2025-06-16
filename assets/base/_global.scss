@@ -158,7 +158,7 @@ section{
         .card-base{
             width : 100%;
             gap : 0.5rem;
-            padding : 1rem;
+            padding : 2rem;
         }
         #hCard{
             @include flex(row, center, center);
@@ -169,7 +169,7 @@ section{
         .card-base{
             width : 100%;
             gap : 0.5rem;
-            padding : 1rem;
+            padding : 2rem;
         }
         #dCard{
             @include flex(row, center, center);
