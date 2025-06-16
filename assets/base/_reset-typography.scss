@@ -31,7 +31,7 @@ p{
 /**
 **************** Mobile **************************
 **/
-@media (max-width: 1090px) {
+@media only screen and (max-width: 1090px) and (orientation: portrait)  {
 
 p{
     font-size : 4rem;

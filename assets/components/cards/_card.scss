@@ -39,7 +39,7 @@
 /**
 **************** Mobile **************************
 **/
-@media (max-width: 1090px) {
+@media only screen and (max-width: 1090px) and (orientation: portrait)  {
     .card-hour{
         width : 6rem;
         height : 24rem;
