@@ -14,3 +14,16 @@
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
+
+
+/**
+**************** Mobile **************************
+**/
+@media (max-width: 1090px) {
+
+    .secondary-button{
+
+        width:24rem;
+
+    }
+}
